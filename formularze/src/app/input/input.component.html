@@ -1,0 +1,16 @@
+<div [formGroup]="group">
+    <input [type]="type" name="name" [formControlName]="name" />
+    <button (click)="reset()">x</button>
+
+    @if(isInvalid()){
+
+        @if(hasError('required')){
+            <div>Pole jest wymagane</div>
+        }
+        @if(hasError('minlenght')){
+            <div>Pole wymaga minimum 3 znaków</div>
+        }
+
+    }
+
+</div>
