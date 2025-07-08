@@ -12,7 +12,7 @@ export interface UserItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: UserItem[] = [
-  {id: 1, name: 'Hydrogen'},
+  {id: 1, name: '_USER'},
   {id: 2, name: 'Helium'},
   {id: 3, name: 'Lithium'},
   {id: 4, name: 'Beryllium'},

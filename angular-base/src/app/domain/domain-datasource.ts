@@ -12,7 +12,7 @@ export interface DomainItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DomainItem[] = [
-  {id: 1, name: 'Hydrogen'},
+  {id: 1, name: '_DOMAIN'},
   {id: 2, name: 'Helium'},
   {id: 3, name: 'Lithium'},
   {id: 4, name: 'Beryllium'},

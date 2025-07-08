@@ -12,7 +12,7 @@ export interface ApplicationItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: ApplicationItem[] = [
-  {id: 1, name: 'Hydrogen'},
+  {id: 1, name: '_APPLICATION'},
   {id: 2, name: 'Helium'},
   {id: 3, name: 'Lithium'},
   {id: 4, name: 'Beryllium'},
