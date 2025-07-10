@@ -1,0 +1,20 @@
+name: New prompt
+version: 0.0.1
+schema: v1
+prompts:
+  - name: Wykonaj review Angular
+    description:  Przejrzyj aktualnie otwarty plik 
+    prompt: | 
+      Przejrzyj aktualnie otwarty plik pod kątem zgodności z najlepszymi praktykami Angulara, 
+      zgodnie z oficjalnymi zaleceniami i stylem przedstawionym w dokumentacji Angulara (https://angular.io/guide/styleguide).
+
+      Zwróć szczególną uwagę na:
+      - odpowiedzialność komponentów,
+      - zarządzanie stanem za pomocą `signals`,
+      - stosowanie `ChangeDetectionStrategy.OnPush`,
+      - unikanie `ngClass` i `ngStyle` na rzecz bezpośrednich wiązań,
+      - użycie `input()` i `output()` zamiast dekoratorów,
+      - czytelność i struktura szablonów,
+      - poprawność DI oraz projektowania serwisów.
+
+      Podaj konkretne sugestie ulepszeń po polsku.
