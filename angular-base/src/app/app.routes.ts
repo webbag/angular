@@ -1,8 +1,9 @@
+import { Routes } from '@angular/router';
 import { UserComponent } from './user/user.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { DomainComponent } from './domain/domain.component';
 import { ApplicationComponent } from './application/application.component';
-import { Routes } from '@angular/router';
+import { UserFormComponent } from './user-form/user-form.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,10 @@ export const routes: Routes = [
     path: 'user',
     component: UserComponent,
   },
+  {
+    path: 'user-form',
+    component: UserFormComponent,
+  },  
   {
     path: 'domain',
     component: DomainComponent,
