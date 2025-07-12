@@ -1,0 +1,25 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="id">ID:</label>
+    <input id="id" formControlName="id" disabled>
+  </div>
+  <div>
+    <label for="uuid">UUID:</label>
+    <input id="uuid" formControlName="uuid">
+  </div>
+  <div>
+    <label for="login">Login:</label>
+    <input id="login" formControlName="login">
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="status">Status:</label>
+    <select id="status" formControlName="status">
+      <option *ngFor="let option of ['active', 'disabled']" [value]="option">{{option}}</option>
+    </select>
+  </div>
+  <button type="submit">Save</button>
+</form>
