@@ -3,6 +3,7 @@ import { DomainComponent } from './domain/domain.component';
 import { ApplicationComponent } from './application/application.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserList } from './user/user-list/user-list';
+import { UserEdit } from './user/user-edit/user-edit';
 
 export const routes: Routes = [
   {
@@ -10,9 +11,13 @@ export const routes: Routes = [
     component: DashboardComponent,
   },
   {
-    path: 'user',
+    path: 'users',
     component: UserList,
   },
+  {
+    path: 'users/:id',
+    component: UserEdit,
+  },  
   {
     path: 'domain',
     component: DomainComponent,

@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { MatTableModule, MatTable } from '@angular/material/table';
 import { UserDataSource } from '../user-datasource';
 import { UserItem } from '../user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -15,8 +16,12 @@ export class UserList {
 
   displayedColumns = ['id', 'uuid', 'login', 'name', 'status'];
 
-  constructor() {
+  constructor(private router: Router) {
     this.dataSource = new UserDataSource();
+  }
+
+  editUser(userId: string): void {
+    this.router.navigate(['users/', userId]);
   }
 
 }

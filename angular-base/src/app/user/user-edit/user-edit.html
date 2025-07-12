@@ -1,0 +1,18 @@
+<form [formGroup]="editForm" (ngSubmit)="onSave()">
+  <label for="id">ID</label>
+  <input id="id" formControlName="id"/>
+
+  <label for="uuid">UUID</label>
+  <input id="uuid" formControlName="uuid"/>
+
+  <label for="login">Login</label>
+  <input id="login" formControlName="login"/>
+
+  <label for="name">Name</label>
+  <input id="name" formControlName="name"/>
+
+  <label for="status">Status</label>
+  <input id="status" formControlName="status"/>
+
+  <button type="submit">Save</button>
+</form>
