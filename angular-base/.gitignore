@@ -3,6 +3,7 @@
 # Compiled output
 /dist
 /tmp
+/_tmp/
 /out-tsc
 /bazel-out
 
